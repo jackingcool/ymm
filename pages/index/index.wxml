@@ -1,0 +1,18 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="timer">12:34</view>
+  <view class="wx-left-content">
+    <view class="wx-head-photo"> 
+    <image src="../imgs/mgg.jpg" mode='widthFix'/>
+    </view>
+    <view class="wx-left-triangle"></view>
+    <view class="wx-left-bobble"></view>
+    <span></span>
+  </view>
+
+
+</view>
+
+
+
+    
