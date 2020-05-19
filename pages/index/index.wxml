@@ -1,18 +1,69 @@
 <!-- index.wxml -->
-<view class="container">
+<view class="content">
   <view class="timer">12:34</view>
+  
   <view class="wx-left-content">
-    <view class="wx-head-photo"> 
-    <image src="../imgs/mgg.jpg" mode='widthFix'/>
+    <view class="wx-left-photo">
+      <image src="../imgs/mgg.jpg" mode='widthFix' />
     </view>
     <view class="wx-left-triangle"></view>
-    <view class="wx-left-bobble"></view>
-    <span></span>
+    <view class="wx-left-bobble">
+      <image src="../imgs/left.gif" mode='widthFix' />
+    </view>
   </view>
 
+  <view class="wx-right-content">
+    <view class="wx-right-bobble">
+      <image src="../imgs/right.gif" mode='widthFix' />
+    </view>
+    <view class="wx-right-triangle"></view>
+    <view class="wx-right-photo">
+      <image src="../imgs/ymm.jpg" mode='widthFix' />
+    </view>
+  </view>
 
+  <view class="wx-left-content">
+    <view class="wx-left-photo">
+      <image src="../imgs/mgg.jpg" mode='widthFix' />
+    </view>
+    <view class="wx-left-triangle"></view>
+    <view class="wx-left-content-bobble">
+      <view class="wx-left-text-content">
+        2020年05月20日 00:00:00
+        这是我们结识的第123天
+        <br />
+        I always believe that Sakyamuni said:
+        "No matter who you meet, he is the one who should appear in your life. It's no accident. He will teach you something.". So I also believe: "no matter where I go, it's the place I should go, experience something I should experience, meet the person I should meet."
+        <br />
+        我一直相信释迦牟尼说的一句话：
+       “无论你遇见谁，他都是你生命该出现的人，绝非偶然，他一定会教会你一些什么”。所以我也相信：“无论我走到哪里，那都是我该去的地方，经历一些我该经历的事，遇见我该遇见的人”
+        <br />
+        \r
+        <br />
+        来自两百多斤的mgg
+      </view>
+    </view>
+  </view>
+  <view class="wx-right-content">
+    <view class="wx-right-bobble2">
+      <image src="../imgs/right2.gif" mode='widthFix' />
+    </view>
+    <view class="wx-right-photo">
+      <image src="../imgs/ymm.jpg" mode='widthFix' />
+    </view>
+  </view>
+
+  <view class="wx-left-content">
+    <view class="wx-left-photo">
+      <image src="../imgs/mgg.jpg" mode='widthFix' />
+    </view>
+    <view class="wx-left-triangle"></view>
+    <view class="wx-left-content-bobble">
+      <view class="wx-left-text-content">
+        Actually, I really love you very much. It's just a love that can't be shared
+        <br />
+        其实我是真的真的很爱你 只是只有一份爱无法共享
+      </view>
+    </view>
+  </view>
 </view>
-
-
-
-    

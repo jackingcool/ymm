@@ -1,71 +1,141 @@
-page{
+page {
   background-color: #EDEDED;
   font-family: -apple-system;
   font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
 }
 
-.container{
-  margin:0;
-  padding:0;
-}
-
-.timer{
+.timer {
   color: #D0D0D0;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 3vw;
   font-size: 33rpx;
 }
 
-.wx-left-content{
-  display: flex; 
-  justify-content:left;
+.wx-left-content {
+  display: flex;
+  justify-content: flex-start;
   padding: 2vw 11vw 2vw 2vw;
-  border:1px solid red;
 }
-.wx-head-photo{
-  width: 11vw; 
+
+.wx-left-photo {
+  width: 11vw;
   height: 11vw;
 }
 
-.wx-head-photo image{
-  width:11vw;
-  height: 11vw; 
+.wx-left-photo image {
+  width: 11vw;
+  height: 11vw;
   border-radius: 10rpx;
 }
 
 
-.wx-left-triangle{
+.wx-left-triangle {
   height: 0px;
   width: 0px;
-  border-width: 6px;
+  border-width: 2.5vw;
   border-style: solid;
   border-color: transparent white transparent transparent;
   position: relative;
-  top: 3px;
+  top: 2.5vw;
+  left: -1vw;
 }
 
-.chat-notice{
+.chat-notice {
   clear: both;
   font-size: 70%;
   color: white;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
-.wx-left-bobble{
+
+.wx-left-bobble {
   background-color: white;
-  margin: 0 50px 10px 50px;
-  padding: 10px 10px 10px 10px;
-  border-radius:7px;
-  text-indent: -12px;
-  
+  margin: 0 4vw 2vw -1vw;
+  padding: 2vw 2vw 3vw 2vw;
+  border-radius: 2vw;
+  text-indent: -6vw;
+}
+
+.wx-left-bobble image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+}
+/*右边*/
+
+.wx-right-content{
+  display: flex;
+  justify-content: flex-end;
+  padding: 2vw 2vw 2vw 11vw;
+}
+
+.wx-right-photo {
+  width: 11vw;
+  height: 11vw;
+}
+
+.wx-right-photo image {
+  width: 11vw;
+  height: 11vw;
+  border-radius: 10rpx;
+}
+
+.wx-right-bobble{
+  background-color: #A9E977;
+  margin: 0 -1vw 2vw 0;
+  padding: 2vw 2vw 3vw 2vw;
+  border-radius: 2vw;
+  text-indent: -6vw;
+}
+
+.wx-right-bobble image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+}
+
+.wx-right-bobble2{
+  margin-right: 4vw;
+}
+
+.wx-right-bobble2 image{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24vw;
+}
+
+.wx-right-triangle {
+  height: 0px;
+  width: 0px;
+  border-width: 2.5vw;
+  border-style: solid;
+  border-color: transparent transparent transparent #A9E977;
+  position: relative;
+  top: 2.5vw;
+  left: 1vw;
 }
 
 
 
+.wx-left-content-bobble{
+  background-color: white;
+  margin: 0 4vw 2vw -1vw;
+  padding: 2vw 2vw 3vw 2vw;
+  border-radius: 2vw;
+  width:60vw;
+ 
+}
 
+.wx-left-text-content{
+  white-space: pre-line;
+  margin-top: -4vw;
 
-
+ 
+}
 
