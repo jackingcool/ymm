@@ -10,7 +10,7 @@ page {
   justify-content: center;
   align-items: center;
   margin: 3vw;
-  font-size: 33rpx;
+  font-size: 30rpx;
 }
 
 .wx-left-content {

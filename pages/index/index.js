@@ -78,10 +78,8 @@ Page({
   },
   setTimeOutContent: function (i, time) {
     var that = this;
-    var times = [3000, 3500, 4000, 4500];
     var longTime = 30000;
     var timer = setInterval(function () {
-      time = times[Math.floor(Math.random() * times.length + 1) - 1];
       if (i == 3) {
         time = 10000;
       }
