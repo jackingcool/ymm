@@ -126,7 +126,7 @@ page {
 .wx-left-content-bobble{
   background-color: white;
   margin: 0 4vw 2vw -1vw;
-  padding: 2vw 2vw 3vw 2vw;
+  padding: 2vw 4vw 5vw 4vw;
   border-radius: 2vw;
   width:60vw;
  
@@ -135,7 +135,20 @@ page {
 .wx-left-text-content{
   white-space: pre-line;
   margin-top: -4vw;
-
- 
+  padding:0 1vw 0 1vw;
 }
+
+.red-packet{
+  width: 60rpx;
+  height: 60rpx;
+  z-index: 100;
+  transition-property:transform,top;
+  transform-origin:50% 50% 0;
+  -webkit-transition-property:transform,top;
+  -webkit-transform-origin:50% 50% 0;
+}
+.foot{
+  height: 10vw;
+}
+
 

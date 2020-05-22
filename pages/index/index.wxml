@@ -1,8 +1,7 @@
 <!-- index.wxml -->
 <view class="content">
-  <view class="timer">12:34</view>
-  
-  <view class="wx-left-content">
+  <view wx:if="{{flags[0]}}" class="timer">{{firstTime}}</view>
+  <view wx:if="{{flags[0]}}" class="wx-left-content">
     <view class="wx-left-photo">
       <image src="../imgs/mgg.jpg" mode='widthFix' />
     </view>
@@ -12,7 +11,7 @@
     </view>
   </view>
 
-  <view class="wx-right-content">
+  <view wx:if="{{flags[1]}}"  class="wx-right-content">
     <view class="wx-right-bobble">
       <image src="../imgs/right.gif" mode='widthFix' />
     </view>
@@ -22,15 +21,15 @@
     </view>
   </view>
 
-  <view class="wx-left-content">
+  <view wx:if="{{flags[2]}}"  class="wx-left-content">
     <view class="wx-left-photo">
       <image src="../imgs/mgg.jpg" mode='widthFix' />
     </view>
     <view class="wx-left-triangle"></view>
     <view class="wx-left-content-bobble">
       <view class="wx-left-text-content">
-        2020年05月20日 00:00:00
-        这是我们结识的第123天
+        {{punch}}
+        这是我们结识的{{meetTime}}
         <br />
         I always believe that Sakyamuni said:
         "No matter who you meet, he is the one who should appear in your life. It's no accident. He will teach you something.". So I also believe: "no matter where I go, it's the place I should go, experience something I should experience, meet the person I should meet."
@@ -44,7 +43,7 @@
       </view>
     </view>
   </view>
-  <view class="wx-right-content">
+  <view wx:if="{{flags[3]}}"  class="wx-right-content">
     <view class="wx-right-bobble2">
       <image src="../imgs/right2.gif" mode='widthFix' />
     </view>
@@ -53,17 +52,21 @@
     </view>
   </view>
 
-  <view class="wx-left-content">
+  <view wx:if="{{flags[4]}}"  class="wx-left-content">
     <view class="wx-left-photo">
       <image src="../imgs/mgg.jpg" mode='widthFix' />
     </view>
     <view class="wx-left-triangle"></view>
     <view class="wx-left-content-bobble">
       <view class="wx-left-text-content">
-        Actually, I really love you very much. It's just a love that can't be shared
-        <br />
-        其实我是真的真的很爱你 只是只有一份爱无法共享
+        Actually, I'm really really love you very much.     
       </view>
     </view>
   </view>
 </view>
+
+<view wx:if="{{flags[4]}}" wx:for="{{packetList}}"  wx:key="index" wx:for-index="index" wx:for-item="items">
+  <image class="red-packet" src="{{items.src}}" style="position:fixed;top:{{items.top}}px;left:{{items.left}}px;-webkit-transition:{{items.speed}}ms linear 0ms;transition:{{items.speed}}ms linear 0ms">
+  </image>
+</view>
+<view class="foot"></view>
