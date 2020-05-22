@@ -21,7 +21,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setTimeOutContent(0, 2000);
+    this.setTimeOutContent(0, 3000);
     this.getTime();
     this.getCurrentTime();
     this.getMeetTime();
