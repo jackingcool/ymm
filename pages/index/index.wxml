@@ -1,72 +1,91 @@
 <!-- index.wxml -->
 <view class="content">
-  <view wx:if="{{flags[0]}}" class="timer">{{firstTime}}</view>
-  <view wx:if="{{flags[0]}}" class="wx-left-content">
-    <view class="wx-left-photo">
-      <image src="../imgs/mgg.jpg" mode='widthFix' />
-    </view>
-    <view class="wx-left-triangle"></view>
-    <view class="wx-left-bobble">
-      <image src="../imgs/left.gif" mode='widthFix' />
-    </view>
-  </view>
+				<view wx:if="{{flags[0]}}" class="timer">{{firstTime}}</view>
+				<view wx:if="{{flags[0]}}" class="wx-left-content">
+								<view class="wx-left-photo">
+												<image src="../imgs/mgg.jpg" mode='widthFix' />
+								</view>
+								<view class="wx-left-triangle"></view>
+								<view class="wx-left-bobble">
+												<view class="text-area">
+																<view wx:for="{{dataList}}" wx:key="index">
+																				<view class="{{item.class}}" wx:for="{{item}}" wx:key="index"></view>
+																</view>
+												</view>
+								</view>
+				</view>
+				<view wx:if="{{flags[1]}}" class="wx-left-content">
+								<view class="wx-left-photo">
+												<image src="../imgs/mgg.jpg" mode='widthFix' />
+								</view>
+								<view class="wx-left-triangle"></view>
+								<view class="wx-left-content-bobble">
+												<text v-if="this.flags[1]" class="wx-left-text-content">相遇的									
+					第{{meetTime}}
 
-  <view wx:if="{{flags[1]}}"  class="wx-right-content">
-    <view class="wx-right-bobble">
-      <image src="../imgs/right.gif" mode='widthFix' />
-    </view>
-    <view class="wx-right-triangle"></view>
-    <view class="wx-right-photo">
-      <image src="../imgs/ymm.jpg" mode='widthFix' />
-    </view>
-  </view>
+					再次后知后觉，我才发现，在我心中 有一个特别的爱人。红尘情愫万千，可最终的结局却是一再错过。到最后，以友情的名义爱着一个人，以朋友的身份在意一个人。
+					越是想念，越是不会去打搅，只在每一个寂静的夜里，思念随着清风，飘向有你的远方......
 
-  <view wx:if="{{flags[2]}}"  class="wx-left-content">
-    <view class="wx-left-photo">
-      <image src="../imgs/mgg.jpg" mode='widthFix' />
-    </view>
-    <view class="wx-left-triangle"></view>
-    <view class="wx-left-content-bobble">
-      <view class="wx-left-text-content">
-        {{punch}}
-        这是我们结识的{{meetTime}}
-        <br />
-        I always believe that Sakyamuni said:
-        "No matter who you meet, he is the one who should appear in your life. It's no accident. He will teach you something.". So I also believe: "no matter where I go, it's the place I should go, experience something I should experience, meet the person I should meet."
-        <br />
-        我一直相信释迦牟尼说的一句话：
-       “无论你遇见谁，他都是你生命该出现的人，绝非偶然，他一定会教会你一些什么”。所以我也相信：“无论我走到哪里，那都是我该去的地方，经历一些我该经历的事，遇见我该遇见的人”
-        <br />
-        \r
-        <br />
-        来自两百多斤的mgg
-      </view>
-    </view>
-  </view>
-  <view wx:if="{{flags[3]}}"  class="wx-right-content">
-    <view class="wx-right-bobble2">
-      <image src="../imgs/right2.gif" mode='widthFix' />
-    </view>
-    <view class="wx-right-photo">
-      <image src="../imgs/ymm.jpg" mode='widthFix' />
-    </view>
-  </view>
+					此生能够遇见，已是幸运。
+					未曾真心爱过一个人，永远无法体会，爱是多动人；深深爱过，却有缘无分，有多少无奈和遗憾。
 
-  <view wx:if="{{flags[4]}}"  class="wx-left-content">
-    <view class="wx-left-photo">
-      <image src="../imgs/mgg.jpg" mode='widthFix' />
-    </view>
-    <view class="wx-left-triangle"></view>
-    <view class="wx-left-content-bobble">
-      <view class="wx-left-text-content">
-        Actually, I'm really really love you very much.     
-      </view>
-    </view>
-  </view>
+					此生能够遇见，就是一种莫大的幸福。哪怕已经擦肩而过，依然会默默地牵挂，静静地守候，甘愿用尽一生，等待一场遥不可及的重逢。
+
+					“斯人若彩虹，遇见方知有。”遇见你，便迎来一生中最美的时光。一起走过的路，一起说过的话，沐浴同一轮阳光，共赏同一轮明月，都像一幅幅唯美的画卷，烙印在眉间心上。
+					每一段爱情，都有唯一的结局。哪怕我不愿去面对，它总会有到来的那一天。相守或是离开，在此前很长一段时间内，已经有了铺垫，当那一天真正来临，依然会不能自已。
+					再多的眷恋，再多的不舍，再多的感激，都化为了深深的祝福。往后余生，山高水长，也许将不复再见，唯有这份深情，永远相随。
+
+					人到中年，再喜欢一个人，我也懂得适可而止。
+					心上有个人，是不可言说的秘密，是无声的温暖。心上有个人，无言也温柔。
+					每天，依然像周围人一样，按部就班过日子。面对着身边形同陌路的爱人，不再有争吵，也不再有期待，只求能够将将就就，平平安安。面对着无聊的同事，尽量装作若无其事，不让他们看出自己的不屑和鄙夷。
+
+					因为，所爱之人让我们成为更好的自己：有才华、有魅力，洞悉人性，却又不世故。
+					因为，所爱之人让我们看到更好的世界：不被眼前的苟且所羁绊，不管到了什么年纪，依旧对未来，有着深深的期待，并为之付出努力。
+					
+					这份心灵的陪伴，是喧嚣人世间一剂灵丹妙药，它能让人瞬间安静下来，直面人生，直面自我，奋力改变，追求更美。
+					两个人，如在同一时空的平行线，遥遥相望，彼此鼓励，共同进步，唯有如此，才能与所爱之人，永远站在同一个高度，并驾齐驱。
+
+					就像一位作家所言：
+					人到中年，如果很喜欢一个人，那么请保持一个朋友的距离，这样一辈子都不会失去，千万不要奢望靠近。人一旦有了贪念，就注定要失去。有些风景只能喜欢，却不能收藏。就像有些人，只适合遇见，却不适合牵手。
+
+					深爱一个人，无需再去表白。有一天，我才发现，自己的一言一行，都有了你的影子，待人接物，也有了你的个性特点，而内心，也生发出了抵御人生风雨的坚强铠甲，你要相信，爱一直都在，从未远离。
+
+					这一种深爱，叫不打扰，不联系。
+					如果有一天，我们变成了陌生人，你还会不会偶尔想起我？如果有一天，我们变成了陌生人，你还会不会期待能重逢？
+
+					当命运让我们从此天涯陌路，我想，我断然无法放下，纵然不再联系，不再打扰，但思念一直都在。我会把你放在心里，真诚祝福你，一切都好，哪怕你的幸福，与我无关。
+					春去秋来，岁月流转，在逝去的年华里，你有的清欢渡，我有我的不归途。
+
+					总会触景生情，总会在某个不经意的时刻，就想起你。只是，回想起那段时光，我们一起奋斗过，那是最刻骨铭心的成长，是心底最清晰的烙印。
+					关于你的一切，都已经悄悄尘封。那个熟悉的电话号码，静静地躺在电话薄中；那些属于我们的文字，不再翻看；当一个人走近了彼此的生命，你的容颜相貌，你的言行举止，你的喜乐哀愁，便会成为生命的一部分，无需刻意想起，也不用刻意忘记。
+
+					我爱你，与你无关，即使是夜晚无尽的思念，也只属于我自己，不会带到天明，也许它只能存在于黑暗。我爱你，与你无关，真的啊，它只属于我的心，只要你能幸福，我的悲伤，你不需要管。
+					也许，爱着的人，会一直爱着，念着的人，会一直想念，这份纯情的爱，只属于那个曾经来过，曾经爱过，却又擦肩而过的挚爱。
+					此生，遇到一个人，爱上一个人，爱情得到圆满，纵然无法相守，也已是无憾。
+
+					也许，某一天，依然还能在街角不期而遇，隔着茫茫人海，我依然能够一眼就认出你。我想，我会对你微笑，尔后，就迅速地转身，就像遇见某个熟人一样。
+					只是，心中会涌起无限的温暖......
+
+					您的幸福 我的祝福
+
+					Happy everyday ~
+
+					By:三水
+												</text>
+								</view>
+				</view>
+				<view wx:if="{{flags[2]}}" class="wx-left-content">
+								<view class="wx-left-photo">
+												<image src="../imgs/mgg.jpg" mode='widthFix' />
+								</view>
+								<view class="wx-left-triangle"></view>
+								<view class="wx-left-content-bobble">
+												<text class="wx-left-text-content">Actually, I'm really really love you very much.
+												</text>
+								</view>
+				</view>
 </view>
-
-<view wx:if="{{flags[4]}}" wx:for="{{packetList}}"  wx:key="index" wx:for-index="index" wx:for-item="items">
-  <image class="red-packet" src="{{items.src}}" style="position:fixed;top:{{items.top}}px;left:{{items.left}}px;-webkit-transition:{{items.speed}}ms linear 0ms;transition:{{items.speed}}ms linear 0ms">
-  </image>
+<view wx:if="{{flags[2]}}" wx:for="{{packetList}}" wx:key="index" wx:for-index="index" wx:for-item="items">
+				<image class="red-packet" src="{{items.src}}" style="position:fixed;top:{{items.top}}px;left:{{items.left}}px;-webkit-transition:{{items.speed}}ms linear 0ms;transition:{{items.speed}}ms linear 0ms"></image>
 </view>
 <view class="foot"></view>

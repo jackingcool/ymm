@@ -1,7 +1,80 @@
 page {
   background-color: #EDEDED;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: -apple-system;
-  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  font-size: 16px;
+  flex-wrap: warp;
+  padding-top: 2%;
+  width:100%;
+  overflow-x:hidden;
+}
+
+.text-area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.text-content {
+  text-indent: 50rpx;
+  width: 90%;
+  height: 200rpx;
+  margin-top: 40rpx;
+
+
+}
+
+.block {
+  height: 25rpx;
+  width: 25rpx;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+
+.block-black {
+  height: 25rpx;
+  width: 25rpx;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  background-color: #333333;
+}
+
+.block-yellow {
+  height: 25rpx;
+  width: 25rpx;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  background-color: #FDCE2A;
+}
+
+.block-brown {
+  height: 25rpx;
+  width: 25rpx;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  background-color: #DA911E;
+}
+
+.block-white {
+  height: 25rpx;
+  width: 25rpx;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  background-color: white;
+}
+
+.block-red {
+  height: 25rpx;
+  width: 25rpx;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  background-color: red;
 }
 
 .timer {
@@ -9,14 +82,14 @@ page {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3vw;
+  margin-top: 15rpx;
   font-size: 30rpx;
 }
 
 .wx-left-content {
   display: flex;
   justify-content: flex-start;
-  padding: 2vw 11vw 2vw 2vw;
+  padding: 1vw 11vw 1vw 1vw;
 }
 
 .wx-left-photo {
@@ -36,7 +109,7 @@ page {
   width: 0px;
   border-width: 2.5vw;
   border-style: solid;
-  border-color: transparent white transparent transparent;
+  border-color: transparent #A9EA7A transparent transparent;
   position: relative;
   top: 2.5vw;
   left: -1vw;
@@ -52,7 +125,7 @@ page {
 }
 
 .wx-left-bobble {
-  background-color: white;
+  background-color: #A9EA7A;
   margin: 0 4vw 2vw -1vw;
   padding: 2vw 2vw 3vw 2vw;
   border-radius: 2vw;
@@ -65,90 +138,32 @@ page {
   align-items: center;
   width: 8vw;
 }
-/*右边*/
 
-.wx-right-content{
-  display: flex;
-  justify-content: flex-end;
-  padding: 2vw 2vw 2vw 11vw;
-}
-
-.wx-right-photo {
-  width: 11vw;
-  height: 11vw;
-}
-
-.wx-right-photo image {
-  width: 11vw;
-  height: 11vw;
-  border-radius: 10rpx;
-}
-
-.wx-right-bobble{
-  background-color: #A9E977;
-  margin: 0 -1vw 2vw 0;
-  padding: 2vw 2vw 3vw 2vw;
-  border-radius: 2vw;
-  text-indent: -6vw;
-}
-
-.wx-right-bobble image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 8vw;
-}
-
-.wx-right-bobble2{
-  margin-right: 4vw;
-}
-
-.wx-right-bobble2 image{
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24vw;
-}
-
-.wx-right-triangle {
-  height: 0px;
-  width: 0px;
-  border-width: 2.5vw;
-  border-style: solid;
-  border-color: transparent transparent transparent #A9E977;
-  position: relative;
-  top: 2.5vw;
-  left: 1vw;
-}
-
-
-
-.wx-left-content-bobble{
-  background-color: white;
+.wx-left-content-bobble {
+  background-color: #A9EA7A;
   margin: 0 4vw 2vw -1vw;
   padding: 2vw 4vw 5vw 4vw;
   border-radius: 2vw;
-  width:60vw;
- 
+  width: 60vw;
+
 }
 
-.wx-left-text-content{
+.wx-left-text-content {
   white-space: pre-line;
-  margin-top: -4vw;
-  padding:0 1vw 0 1vw;
+  margin-top: -2vw;
+  padding: 0 1vw 0 0;
 }
 
-.red-packet{
+.red-packet {
   width: 60rpx;
   height: 60rpx;
   z-index: 100;
-  transition-property:transform,top;
-  transform-origin:50% 50% 0;
-  -webkit-transition-property:transform,top;
-  -webkit-transform-origin:50% 50% 0;
+  transition-property: transform, top;
+  transform-origin: 50% 50% 0;
+  -webkit-transition-property: transform, top;
+  -webkit-transform-origin: 50% 50% 0;
 }
-.foot{
+
+.foot {
   height: 10vw;
 }
-
-
